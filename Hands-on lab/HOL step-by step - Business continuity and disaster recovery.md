@@ -497,6 +497,8 @@ In this task, the **OnPremVM** will be configured to replicate to Azure and be r
     ![IE Enhanced Security Configuration is set to On.](images/Hands-onlabstep-bystep-Businesscontinuityanddisasterrecoveryimages/media/image15.png "IE Enhanced Security Configuration ")
 
 20. Change to **Off** for Administrators and select **OK**.
+  
+    ![In the Internet Explorer Enhanced Security Configuration dialog box, Administrators and Users are both set to Off.](images/Hands-onlabstep-bystep-Businesscontinuityanddisasterrecoveryimages/media/image410updation.png "Internet Explorer Enhanced Security Configuration dialog box")
 
 21. Open Internet Explorer on **HYPERVHOST** and browse to the following URL. This will download the Azure Site Recovery Provider for Hyper-V.
 
@@ -784,9 +786,12 @@ In this task, you will build a Windows Failover Cluster and configure SQL Always
 
     ![In the Resource groups blade, under Name, the BCDRIaaSPrimarySite resource group is selected.](images/Hands-onlabstep-bystep-Businesscontinuityanddisasterrecoveryimages/media/image147.png "Resource groups blade")
 
-9. Select **BCDRDC1** and then select **Connect**.
+9. Select **BCDRDC1** and then select **Connect**. Choose Download RDP File, then open the downloaded file and login using the following credentials:
 
-    ![In the top menu of the Virtual Machine blade, Connect is selected.](images/Hands-onlabstep-bystep-Businesscontinuityanddisasterrecoveryimages/media/image148.png "Virtual Machine blade")
+    - **Username**: `mcwadmin`
+    - **Password**: `demo@pass123`
+
+   ![In the top menu of the Virtual Machine blade, Connect is selected.](images/Hands-onlabstep-bystep-Businesscontinuityanddisasterrecoveryimages/media/image148.png "Virtual Machine blade")
 
 10. Once in the RDP session to **BCDRDC1**, select **Start** and then **Remote Desktop**. You will need to connect to **SQLVM1** for the next steps.
 
@@ -1071,6 +1076,8 @@ In this task, you will build a Windows Failover Cluster and configure SQL Always
 72. Once you have verified that the application is up and running, you will need to build a Front Door to direct traffic to the edge of your Primary and Secondary Site. Select **+Create a resource**, then search for and select **Front Door** within the Azure Portal.
 
     ![In the Azure Portal, under Azure Marketplace, search for and select Front Door.](images/Hands-onlabstep-bystep-Businesscontinuityanddisasterrecoveryimages/media/image213.png "Azure Portal")
+    
+    ![In the Azure Portal, under Azure Marketplace, search for and select Front Door.](images/Hands-onlabstep-bystep-Businesscontinuityanddisasterrecoveryimages/media/image411.png "Azure Portal")
 
 73. Complete the **Basics** tab of the **Create a Front Door** blade using the following inputs, then select **Next: Configuration >**:
 
@@ -1518,7 +1525,7 @@ In this task you will deploy the website to App Services using Visual Studio, mi
 
 46. On the **Publish** screen select **App Service** and then **Select Existing** and finally **Create Profile**.
 
-    ![On the Publish screen, App Service is selected. The radio button for Select Existing is selected as well.](images/Hands-onlabstep-bystep-Businesscontinuityanddisasterrecoveryimages/media/image299.png "Publish screen")
+    ![On the Publish screen, App Service is selected. The radio button for Select Existing is selected as well.](images/Hands-onlabstep-bystep-Businesscontinuityanddisasterrecoveryimages/media/image413.png "Publish screen")
 
 47. On the App Service screen select the Web App under the **BCDRPaaSPrimarySite**. Then select **OK**. Ensure that the correct Visual Studio account is selected in the upper right corner of the Add Service wizard if you don't see BCDR HOLD resources.
 
@@ -1545,7 +1552,7 @@ In this task you will deploy the website to App Services using Visual Studio, mi
 
 53. On the **Publish** screen, select **Microsoft Azure App Service** and then **Select Existing** and finally **Create Profile**.
 
-    ![On the Publish screen, Microsoft Azure App Service is selected. The radio button for Select Existing is selected as well.](images/Hands-onlabstep-bystep-Businesscontinuityanddisasterrecoveryimages/media/image299.png "Publish screen")
+    ![On the Publish screen, Microsoft Azure App Service is selected. The radio button for Select Existing is selected as well.](images/Hands-onlabstep-bystep-Businesscontinuityanddisasterrecoveryimages/media/image413.png "Publish screen")
 
 54. This time, choose the Web App from the **Secondary** Site running in the **BCDRPaaSSecondarySite**. Select **OK**.
 
