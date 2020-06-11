@@ -498,7 +498,7 @@ In this task, the **OnPremVM** will be configured to replicate to Azure and be r
 
 20. Change to **Off** for Administrators and select **OK**.
   
-    ![In the Internet Explorer Enhanced Security Configuration dialog box, Administrators and Users are both set to Off.](images/Hands-onlabstep-bystep-Businesscontinuityanddisasterrecoveryimages/media/image410updation.png "Internet Explorer Enhanced Security Configuration dialog box")
+    ![In the Internet Explorer Enhanced Security Configuration dialog box, Administrators is set to Off.](images/Hands-onlabstep-bystep-Businesscontinuityanddisasterrecoveryimages/media/image410updation.png "Internet Explorer Enhanced Security Configuration dialog box")
 
 21. Open Internet Explorer on **HYPERVHOST** and browse to the following URL. This will download the Azure Site Recovery Provider for Hyper-V.
 
