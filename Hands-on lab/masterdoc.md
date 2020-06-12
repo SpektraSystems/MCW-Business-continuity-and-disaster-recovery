@@ -23,6 +23,10 @@
         "RawFilePath": "https://raw.githubusercontent.com/Ritu786/MCW-Business-continuity-and-disaster-recovery/master/Hands-on%20lab/04.md",
         "Order": 5
       }
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/Ritu786/MCW-Business-continuity-and-disaster-recovery/master/Hands-on%20lab/lab-completed.md",
+        "Order": 6
+      }
     ]
   }
 ]
